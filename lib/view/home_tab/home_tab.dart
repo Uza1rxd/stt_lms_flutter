@@ -17,6 +17,8 @@ import 'package:ready_lms/view/home_tab/widget/category.dart';
 import 'package:ready_lms/view/home_tab/widget/popular_course.dart';
 import 'package:ready_lms/view/home_tab/widget/viewall_card.dart';
 import 'package:ready_lms/view/home_tab/widget/welcome_card.dart';
+import 'package:ready_lms/view/home_tab/widget/live_classes.dart';
+import 'package:ready_lms/controllers/live_class.dart';
 
 class HomeTab extends ConsumerStatefulWidget {
   const HomeTab({super.key});
@@ -74,6 +76,9 @@ class _HomeState extends ConsumerState<HomeTab> {
       // Fetch courses
       await ref.read(courseController.notifier).getHomeTabInit();
       
+      // Fetch live classes (with mock data for now)
+      ref.read(liveClassController.notifier).loadMockData();
+      
       setState(() {
         _hasInitialized = true;
       });
@@ -113,6 +118,7 @@ class _HomeState extends ConsumerState<HomeTab> {
                 categoryList.clear();
               });
               ref.read(courseController.notifier).removeListData();
+              ref.read(liveClassController.notifier).loadMockData();
               _initWithTimeout();
             },
             child: const Text('Retry'),
@@ -130,6 +136,21 @@ class _HomeState extends ConsumerState<HomeTab> {
         'assets/images/stt_logo.png',
         height: 32.h,
         fit: BoxFit.contain,
+        errorBuilder: (context, error, stackTrace) {
+          return Container(
+            height: 32.h,
+            width: 60.w,
+            decoration: BoxDecoration(
+              color: Colors.grey[200],
+              borderRadius: BorderRadius.circular(4),
+            ),
+            child: const Icon(
+              Icons.image_not_supported,
+              color: Colors.grey,
+              size: 16,
+            ),
+          );
+        },
       )),
       body: RefreshIndicator(
         onRefresh: () async {
@@ -139,6 +160,7 @@ class _HomeState extends ConsumerState<HomeTab> {
             categoryList.clear();
           });
           ref.read(courseController.notifier).removeListData();
+          ref.read(liveClassController.notifier).loadMockData();
           await _initWithTimeout();
         },
         child: SafeArea(
@@ -160,7 +182,17 @@ class _HomeState extends ConsumerState<HomeTab> {
                                 totalCourse:
                                     ref.watch(courseController).totalCourse,
                               ),
-                              16.ph,
+                              20.ph,
+                            ],
+                          ),
+                        ),
+                        // Live Classes Section
+                        const LiveClassesSection(),
+                        Container(
+                          color: context.color.surface,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
                               ViewAllCard(
                                 title: S.of(context).categories,
                                 onTap: () {

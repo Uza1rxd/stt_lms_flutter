@@ -39,6 +39,21 @@ class _AuthHomeScreenScreenState extends ConsumerState<AuthHomeScreen> {
           'assets/images/stt_logo.png',
           height: 32.h,
           fit: BoxFit.contain,
+          errorBuilder: (context, error, stackTrace) {
+            return Container(
+              height: 32.h,
+              width: 60.w,
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(4),
+              ),
+              child: const Icon(
+                Icons.image_not_supported,
+                color: Colors.grey,
+                size: 16,
+              ),
+            );
+          },
         ),
       ),
       body: GestureDetector(

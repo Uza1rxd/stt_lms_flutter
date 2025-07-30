@@ -17,6 +17,8 @@ import 'package:ready_lms/generated/l10n.dart';
 import 'package:ready_lms/model/hive_mode/hive_cart_model.dart';
 import 'package:ready_lms/routes.dart';
 import 'package:ready_lms/utils/global_function.dart';
+import 'package:ready_lms/service/screenshot_prevention_service.dart';
+import 'package:ready_lms/components/secure_screen.dart';
 
 import 'firebase_options.dart';
 import 'utils/notifactionhandler.dart';
@@ -44,9 +46,10 @@ void main() async {
   await Hive.openBox(AppHSC.appSettingsBox);
   Hive.registerAdapter(HiveCartModelAdapter());
   await Hive.openBox<HiveCartModel>(AppHSC.cartBox);
-  // if (!kDebugMode) {
-  //   await FlutterWindowManager.addFlags(FlutterWindowManager.FLAG_SECURE);
-  // }
+  
+  // Initialize screenshot prevention
+  await ScreenshotPreventionService.initialize();
+  
   runApp(
     const ProviderScope(
       child: MyApp(),
@@ -134,7 +137,13 @@ class MyApp extends ConsumerWidget {
                 ),
                 onGenerateRoute: generatedRoutes,
                 initialRoute: Routes.splash,
-                builder: EasyLoading.init(),
+                builder: (context, child) {
+                  // Wrap each screen with SecureScreen for global protection
+                  return SecureScreen(
+                    showSecurityNotice: false,
+                    child: EasyLoading.init()(context, child),
+                  );
+                },
               ),
             );
           },

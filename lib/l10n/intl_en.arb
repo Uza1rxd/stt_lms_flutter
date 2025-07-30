@@ -242,5 +242,17 @@
   "share": "Share",
   "noBlog": "No blog found!",
   "resultofYourQuiz": "Results of your quiz",
-  "searchCategory": "Search Category"
+  "searchCategory": "Search Category",
+  "liveClasses": "Live Classes",
+  "upcomingClasses": "Upcoming Classes",
+  "joinClass": "Join Class",
+  "classesOngoing": "classes ongoing",
+  "nextClasses": "Next classes",
+  "liveNow": "Live Now",
+  "joinZoom": "Join Zoom Meeting",
+  "classDetails": "Class Details",
+  "instructor": "Instructor",
+  "meetingId": "Meeting ID",
+  "passcode": "Passcode",
+  "participants": "Participants"
 }

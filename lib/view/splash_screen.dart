@@ -116,6 +116,21 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
               width: 150.h,
               height: 150.h,
               fit: BoxFit.contain,
+              errorBuilder: (context, error, stackTrace) {
+                return Container(
+                  width: 150.h,
+                  height: 150.h,
+                  decoration: BoxDecoration(
+                    color: Colors.grey[200],
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: const Icon(
+                    Icons.image_not_supported,
+                    color: Colors.grey,
+                    size: 40,
+                  ),
+                );
+              },
             )
           ],
         ),

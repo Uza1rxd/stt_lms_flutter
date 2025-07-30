@@ -91,7 +91,24 @@ class _BusyLoaderState extends State<BusyLoader> with TickerProviderStateMixin {
                 child: ScaleTransition(
                   scale: _scaleAnimation,
                   child: Consumer(builder: (context, ref, _) {
-                    return Image.asset('assets/images/stt_logo.png');
+                    return Image.asset(
+                      'assets/images/stt_logo.png',
+                      errorBuilder: (context, error, stackTrace) {
+                        return Container(
+                          width: 80,
+                          height: 80,
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: const Icon(
+                            Icons.image_not_supported,
+                            color: Colors.grey,
+                            size: 32,
+                          ),
+                        );
+                      },
+                    );
                   }),
                 ),
               ),
