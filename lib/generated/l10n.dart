@@ -380,6 +380,16 @@ class S {
     );
   }
 
+  /// `Downloads`
+  String get downloads {
+    return Intl.message(
+      'Downloads',
+      name: 'downloads',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Discover Your Perfect Learning Path.`
   String get welcomeText {
     return Intl.message(
@@ -2485,6 +2495,126 @@ class S {
     return Intl.message(
       'Search Category',
       name: 'searchCategory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Live Classes`
+  String get liveClasses {
+    return Intl.message(
+      'Live Classes',
+      name: 'liveClasses',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Upcoming Classes`
+  String get upcomingClasses {
+    return Intl.message(
+      'Upcoming Classes',
+      name: 'upcomingClasses',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Join Class`
+  String get joinClass {
+    return Intl.message(
+      'Join Class',
+      name: 'joinClass',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `classes ongoing`
+  String get classesOngoing {
+    return Intl.message(
+      'classes ongoing',
+      name: 'classesOngoing',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Next classes`
+  String get nextClasses {
+    return Intl.message(
+      'Next classes',
+      name: 'nextClasses',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Live Now`
+  String get liveNow {
+    return Intl.message(
+      'Live Now',
+      name: 'liveNow',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Join Zoom Meeting`
+  String get joinZoom {
+    return Intl.message(
+      'Join Zoom Meeting',
+      name: 'joinZoom',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Class Details`
+  String get classDetails {
+    return Intl.message(
+      'Class Details',
+      name: 'classDetails',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Instructor`
+  String get instructor {
+    return Intl.message(
+      'Instructor',
+      name: 'instructor',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Meeting ID`
+  String get meetingId {
+    return Intl.message(
+      'Meeting ID',
+      name: 'meetingId',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Passcode`
+  String get passcode {
+    return Intl.message(
+      'Passcode',
+      name: 'passcode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Participants`
+  String get participants {
+    return Intl.message(
+      'Participants',
+      name: 'participants',
       desc: '',
       args: [],
     );

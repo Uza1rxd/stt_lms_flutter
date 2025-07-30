@@ -15,7 +15,7 @@ import 'package:ready_lms/view/home_tab/home_tab.dart';
 import 'package:ready_lms/view/more/more_tab.dart';
 
 import '../config/app_text_style.dart';
-import 'favourites/favourites_tab.dart';
+import 'downloads/downloads_tab.dart';
 
 class DashboardScreen extends ConsumerStatefulWidget {
   const DashboardScreen({super.key});
@@ -59,7 +59,7 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
           children: const [
             HomeTab(),
             MyCourseTabScreen(),
-            FavouriteTab(),
+            DownloadsTab(),
             ProfileTab(),
           ],
         ),
@@ -90,9 +90,9 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                   title: S.of(context).myCoursesTab),
               BottomTab(
                   tabIndex: 2,
-                  activeIcon: 'assets/svg/favourites_active.svg',
-                  inActiveIcon: 'assets/svg/favourites_inactive.svg',
-                  title: S.of(context).favourites),
+                  activeIcon: 'assets/svg/downloads_active.svg',
+                  inActiveIcon: 'assets/svg/downloads_inactive.svg',
+                  title: S.of(context).downloads),
               BottomTab(
                   tabIndex: 3,
                   activeIcon: 'assets/svg/more_active.svg',

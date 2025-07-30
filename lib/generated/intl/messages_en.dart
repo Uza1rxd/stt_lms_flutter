@@ -63,6 +63,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "checkInternetConnection":
             MessageLookupByLibrary.simpleMessage("Check Internet Connection"),
         "checkOut": MessageLookupByLibrary.simpleMessage("Checkout"),
+        "classDetails": MessageLookupByLibrary.simpleMessage("Class Details"),
+        "classesOngoing":
+            MessageLookupByLibrary.simpleMessage("classes ongoing"),
         "comments": MessageLookupByLibrary.simpleMessage("Comments"),
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "confirmOTP": MessageLookupByLibrary.simpleMessage("Confirm OTP"),
@@ -99,6 +102,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "download": MessageLookupByLibrary.simpleMessage("Download"),
         "downloadersendport":
             MessageLookupByLibrary.simpleMessage("downloader_send_port"),
+        "downloads": MessageLookupByLibrary.simpleMessage("Downloads"),
         "edit": MessageLookupByLibrary.simpleMessage("Edit"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "emailOrPhone": MessageLookupByLibrary.simpleMessage("Email or Phone"),
@@ -145,8 +149,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "incorrectPin":
             MessageLookupByLibrary.simpleMessage("Incorrect pin code"),
         "instructions": MessageLookupByLibrary.simpleMessage("Instructions:"),
+        "instructor": MessageLookupByLibrary.simpleMessage("Instructor"),
         "isRequired": MessageLookupByLibrary.simpleMessage("is required"),
         "items": MessageLookupByLibrary.simpleMessage("Items"),
+        "joinClass": MessageLookupByLibrary.simpleMessage("Join Class"),
+        "joinZoom": MessageLookupByLibrary.simpleMessage("Join Zoom Meeting"),
         "justNow": MessageLookupByLibrary.simpleMessage("just now"),
         "lToH": MessageLookupByLibrary.simpleMessage("Low to High"),
         "language": MessageLookupByLibrary.simpleMessage("Language"),
@@ -156,6 +163,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "lifetimeAccess":
             MessageLookupByLibrary.simpleMessage("Lifetime Access"),
         "light": MessageLookupByLibrary.simpleMessage("Light"),
+        "liveClasses": MessageLookupByLibrary.simpleMessage("Live Classes"),
+        "liveNow": MessageLookupByLibrary.simpleMessage("Live Now"),
         "loadMore": MessageLookupByLibrary.simpleMessage("Load More"),
         "lockCertificate": MessageLookupByLibrary.simpleMessage(
             "The certificate will be unlocked when your course has been finished."),
@@ -178,6 +187,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "manageAddress": MessageLookupByLibrary.simpleMessage("Manage Address"),
         "markallasread":
             MessageLookupByLibrary.simpleMessage("Mark all as read"),
+        "meetingId": MessageLookupByLibrary.simpleMessage("Meeting ID"),
         "message": MessageLookupByLibrary.simpleMessage("Message"),
         "min": MessageLookupByLibrary.simpleMessage("min"),
         "minute": MessageLookupByLibrary.simpleMessage("min"),
@@ -193,6 +203,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "newFirst": MessageLookupByLibrary.simpleMessage("New First"),
         "newPassDes": MessageLookupByLibrary.simpleMessage(
             "Create a new and strong password that you can remember"),
+        "nextClasses": MessageLookupByLibrary.simpleMessage("Next classes"),
         "noBlog": MessageLookupByLibrary.simpleMessage("No blog found!"),
         "noCategoriesFound":
             MessageLookupByLibrary.simpleMessage("No category found!"),
@@ -222,10 +233,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "orders": MessageLookupByLibrary.simpleMessage("Orders"),
         "other": MessageLookupByLibrary.simpleMessage("Other"),
         "outof": MessageLookupByLibrary.simpleMessage("out of"),
+        "participants": MessageLookupByLibrary.simpleMessage("Participants"),
         "passNotMatch": MessageLookupByLibrary.simpleMessage(
             "Your passwords do not match."),
         "passRecoverDes": MessageLookupByLibrary.simpleMessage(
             "We will send you a  OTP code to recover your password"),
+        "passcode": MessageLookupByLibrary.simpleMessage("Passcode"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "payNow": MessageLookupByLibrary.simpleMessage("Pay Now"),
         "payableAmount": MessageLookupByLibrary.simpleMessage("Payable Amount"),
@@ -320,6 +333,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "totalMark": MessageLookupByLibrary.simpleMessage("Total Mark"),
         "unlockCertificate": MessageLookupByLibrary.simpleMessage(
             "Your course has been completed and your certificate is now ready."),
+        "upcomingClasses":
+            MessageLookupByLibrary.simpleMessage("Upcoming Classes"),
         "updateProfile": MessageLookupByLibrary.simpleMessage("Update Profile"),
         "uploadFromGallery":
             MessageLookupByLibrary.simpleMessage("Upload From Gallery"),

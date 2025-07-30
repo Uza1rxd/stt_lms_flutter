@@ -102,6 +102,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "download": MessageLookupByLibrary.simpleMessage("ডাউনলোড"),
         "downloadersendport":
             MessageLookupByLibrary.simpleMessage("ডাউনলোডার_সেন্ড_পোর্ট"),
+        "downloads": MessageLookupByLibrary.simpleMessage("ডাউনলোড"),
         "edit": MessageLookupByLibrary.simpleMessage("এডিট "),
         "email": MessageLookupByLibrary.simpleMessage("ইমেইল"),
         "emailOrPhone": MessageLookupByLibrary.simpleMessage("ইমেইল অথবা ফোন"),

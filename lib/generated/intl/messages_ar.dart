@@ -98,6 +98,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "download": MessageLookupByLibrary.simpleMessage("تحميل"),
         "downloadersendport":
             MessageLookupByLibrary.simpleMessage("تنزيل_إرسال_المنفذ"),
+        "downloads": MessageLookupByLibrary.simpleMessage("التحميلات"),
         "edit": MessageLookupByLibrary.simpleMessage("يحرر"),
         "email": MessageLookupByLibrary.simpleMessage("بريد إلكتروني"),
         "emailOrPhone":
