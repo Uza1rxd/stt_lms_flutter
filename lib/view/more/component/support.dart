@@ -80,50 +80,6 @@ class Support extends StatelessWidget {
               },
               icon: 'assets/images/phonecall.png'),
           12.ph,
-          Consumer(builder: (context, ref, _) {
-            return ref.read(hiveStorageProvider).isGuest()
-                ? Container()
-                : GestureDetector(
-                    onTap: () {
-                      logOutAndDeleteUserDialog(
-                          context: context,
-                          title: S.of(context).deleteConfirmation,
-                          icon: 'assets/svg/ic_delete_account.svg',
-                          buttonTitle: S.of(context).delete,
-                          ontTap: () async {
-                            var res = await ref
-                                .read(othersController.notifier)
-                                .deleteAccount();
-                            if (res.isSuccess) {
-                              ref.read(hiveStorageProvider).removeAllData();
-                              context.nav.pushNamedAndRemoveUntil(
-                                  Routes.dashboard, (route) => false);
-                              ref
-                                  .read(homeTabControllerProvider.notifier)
-                                  .state = 0;
-                            }
-                          });
-                    },
-                    child: Padding(
-                      padding: EdgeInsets.all(16.h),
-                      child: Row(
-                        children: [
-                          SvgPicture.asset(
-                            'assets/svg/ic_delete_account.svg',
-                            height: 24.h,
-                            width: 24.h,
-                          ),
-                          12.pw,
-                          Text(
-                            S.of(context).deleteAccount,
-                            style: AppTextStyle(context).bodyText,
-                          ),
-                          const Spacer()
-                        ],
-                      ),
-                    ),
-                  );
-          }),
 
           20.ph,
           Consumer(builder: (context, ref, _) {

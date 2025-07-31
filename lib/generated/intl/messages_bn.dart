@@ -22,7 +22,6 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "Missed": MessageLookupByLibrary.simpleMessage("মিসড"),
         "about": MessageLookupByLibrary.simpleMessage("এবাউট"),
         "aboutUs": MessageLookupByLibrary.simpleMessage("আমাদের সম্পর্কে"),
         "accept": MessageLookupByLibrary.simpleMessage("অনুমোদন করুন"),
@@ -70,6 +69,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("কনফার্ম পাসওয়ার্ড"),
         "congratulations": MessageLookupByLibrary.simpleMessage("অভিনন্দন"),
+        "contactTeachers":
+            MessageLookupByLibrary.simpleMessage("শিক্ষকদের সাথে যোগাযোগ"),
         "coourseEnrolledSuccess": MessageLookupByLibrary.simpleMessage(
             "আপনার কোর্স সফলভাবে নথিভুক্ত করা হয়েছে"),
         "coupon": MessageLookupByLibrary.simpleMessage("কুপন"),
@@ -100,6 +101,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "dontHaveAccount":
             MessageLookupByLibrary.simpleMessage("আপনার অ্যাকাউন্ট নেই?"),
         "download": MessageLookupByLibrary.simpleMessage("ডাউনলোড"),
+        "downloadCourse": MessageLookupByLibrary.simpleMessage("কোর্স ডাউনলোড"),
+        "downloadCourseMessage": MessageLookupByLibrary.simpleMessage(
+            "আপনি কি নিশ্চিত যে আপনি অফলাইন অ্যাক্সেসের জন্য এই কোর্সটি ডাউনলোড করতে চান?"),
+        "downloadForOffline": MessageLookupByLibrary.simpleMessage(
+            "অফলাইন অ্যাক্সেসের জন্য ডাউনলোড"),
+        "downloadStarted":
+            MessageLookupByLibrary.simpleMessage("ডাউনলোড শুরু হয়েছে"),
         "downloadersendport":
             MessageLookupByLibrary.simpleMessage("ডাউনলোডার_সেন্ড_পোর্ট"),
         "downloads": MessageLookupByLibrary.simpleMessage("ডাউনলোড"),
@@ -185,6 +193,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "min": MessageLookupByLibrary.simpleMessage("মিনিট"),
         "minute": MessageLookupByLibrary.simpleMessage("মিনিট"),
         "minutes": MessageLookupByLibrary.simpleMessage("মিনিট"),
+        "missed": MessageLookupByLibrary.simpleMessage("মিসড"),
         "more": MessageLookupByLibrary.simpleMessage("আরত্ত"),
         "mostPopularCourse":
             MessageLookupByLibrary.simpleMessage("সর্বাধিক জনপ্রিয় কোর্স"),

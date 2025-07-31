@@ -26,12 +26,12 @@ class Info extends StatelessWidget {
           Row(
             children: [
               InfoBoxCard(
-                  icon: 'assets/svg/ic_certificates.svg',
-                  title: S.of(context).certificates,
+                  icon: 'assets/images/support.png',
+                  title: S.of(context).contactTeachers,
                   color: colors(context).primaryColor ??
                       AppStaticColor.primaryColor,
                   onTap: () {
-                    context.nav.pushNamed(Routes.certificateScreen);
+                    context.nav.pushNamed(Routes.supportScreen);
                   }),
               16.pw,
               Consumer(builder: (context, ref, _) {

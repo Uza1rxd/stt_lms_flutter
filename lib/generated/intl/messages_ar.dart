@@ -22,7 +22,6 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "Missed": MessageLookupByLibrary.simpleMessage("الاسئلة المتاخرة"),
         "about": MessageLookupByLibrary.simpleMessage("عن"),
         "aboutUs": MessageLookupByLibrary.simpleMessage("معلومات عنا"),
         "accept": MessageLookupByLibrary.simpleMessage("قبول"),
@@ -68,6 +67,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
         "congratulations": MessageLookupByLibrary.simpleMessage("مبروك"),
+        "contactTeachers":
+            MessageLookupByLibrary.simpleMessage("تواصل مع المعلمين"),
         "coourseEnrolledSuccess":
             MessageLookupByLibrary.simpleMessage("لقد تم تسجيل دورتك بنجاح"),
         "coupon": MessageLookupByLibrary.simpleMessage("قسيمة"),
@@ -96,6 +97,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "dontHaveAccount":
             MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
         "download": MessageLookupByLibrary.simpleMessage("تحميل"),
+        "downloadCourse": MessageLookupByLibrary.simpleMessage("تحميل الدورة"),
+        "downloadCourseMessage": MessageLookupByLibrary.simpleMessage(
+            "هل أنت متأكد من أنك تريد تحميل هذه الدورة للوصول إليها دون اتصال؟"),
+        "downloadForOffline":
+            MessageLookupByLibrary.simpleMessage("تحميل للوصول دون اتصال"),
+        "downloadStarted": MessageLookupByLibrary.simpleMessage("بدأ التحميل"),
         "downloadersendport":
             MessageLookupByLibrary.simpleMessage("تنزيل_إرسال_المنفذ"),
         "downloads": MessageLookupByLibrary.simpleMessage("التحميلات"),

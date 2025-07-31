@@ -120,7 +120,7 @@ class _AnswerReviewBottomSheetState
           12.ph,
           _buidRowWidget(
             context: context,
-            title: S.of(context).Missed,
+            title: S.of(context).missed,
             value: (widget.examQustion.questions.length - widget.answers.length)
                 .toString(),
           ),

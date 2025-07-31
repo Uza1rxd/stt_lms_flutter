@@ -390,6 +390,56 @@ class S {
     );
   }
 
+  /// `Contact Teachers`
+  String get contactTeachers {
+    return Intl.message(
+      'Contact Teachers',
+      name: 'contactTeachers',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Download for offline access`
+  String get downloadForOffline {
+    return Intl.message(
+      'Download for offline access',
+      name: 'downloadForOffline',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Download Course`
+  String get downloadCourse {
+    return Intl.message(
+      'Download Course',
+      name: 'downloadCourse',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Are you sure you want to download this course for offline access?`
+  String get downloadCourseMessage {
+    return Intl.message(
+      'Are you sure you want to download this course for offline access?',
+      name: 'downloadCourseMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Download started`
+  String get downloadStarted {
+    return Intl.message(
+      'Download started',
+      name: 'downloadStarted',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Discover Your Perfect Learning Path.`
   String get welcomeText {
     return Intl.message(
@@ -2251,10 +2301,10 @@ class S {
   }
 
   /// `Missed`
-  String get Missed {
+  String get missed {
     return Intl.message(
       'Missed',
-      name: 'Missed',
+      name: 'missed',
       desc: '',
       args: [],
     );

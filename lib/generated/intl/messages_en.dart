@@ -22,7 +22,6 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "Missed": MessageLookupByLibrary.simpleMessage("Missed"),
         "about": MessageLookupByLibrary.simpleMessage("About"),
         "aboutUs": MessageLookupByLibrary.simpleMessage("About Us"),
         "accept":
@@ -73,6 +72,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Confirm Password"),
         "congratulations":
             MessageLookupByLibrary.simpleMessage("Congratulations"),
+        "contactTeachers":
+            MessageLookupByLibrary.simpleMessage("Contact Teachers"),
         "coourseEnrolledSuccess": MessageLookupByLibrary.simpleMessage(
             "Your course has been enrolled successfully"),
         "coupon": MessageLookupByLibrary.simpleMessage("Coupon"),
@@ -100,6 +101,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "dontHaveAccount":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
         "download": MessageLookupByLibrary.simpleMessage("Download"),
+        "downloadCourse":
+            MessageLookupByLibrary.simpleMessage("Download Course"),
+        "downloadCourseMessage": MessageLookupByLibrary.simpleMessage(
+            "Are you sure you want to download this course for offline access?"),
+        "downloadForOffline":
+            MessageLookupByLibrary.simpleMessage("Download for offline access"),
+        "downloadStarted":
+            MessageLookupByLibrary.simpleMessage("Download started"),
         "downloadersendport":
             MessageLookupByLibrary.simpleMessage("downloader_send_port"),
         "downloads": MessageLookupByLibrary.simpleMessage("Downloads"),
@@ -192,6 +201,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "min": MessageLookupByLibrary.simpleMessage("min"),
         "minute": MessageLookupByLibrary.simpleMessage("min"),
         "minutes": MessageLookupByLibrary.simpleMessage("minutes"),
+        "missed": MessageLookupByLibrary.simpleMessage("Missed"),
         "more": MessageLookupByLibrary.simpleMessage("More"),
         "mostPopularCourse":
             MessageLookupByLibrary.simpleMessage("Most Popular Courses"),
