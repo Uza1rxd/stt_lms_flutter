@@ -1,0 +1,1 @@
+#full-stars-example-two .rating{display:flex;flex-direction:row;margin:10px 0}#full-stars-example-two .rating__label{cursor:pointer;margin:0 4px}#full-stars-example-two .rating__icon{color:#ccc;transition:color .3s;font-size:25px}#full-stars-example-two .rating__icon.active{color:orange}.filter-list{height:110px;overflow-y:scroll}
